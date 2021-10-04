@@ -2,7 +2,7 @@
 
 # utfx
 
-The utfx library is able to convert unicode strings between UTF-8, modified UTF-8 (used by Java), UTF-16 and UTF-32 encodings. Additional features:
+The utfx library is a simple cross-platform library in plain C for converting Unicode strings between UTF-8, modified UTF-8 (used by Java), UTF-16 and UTF-32 encodings. Additional features:
 
 * the ability to compute the lengths of these strings in Unicode *characters* (not bytes, words, or quadrabytes);
 * functions for accessing files and folders in UTF-8 (`fopen_utf8`, `mkdir_utf8`, etc.);
