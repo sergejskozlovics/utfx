@@ -8,7 +8,7 @@ The utfx library is a simple cross-platform library in plain C for converting Un
 * functions for accessing files and folders in UTF-8 (`fopen_utf8`, `mkdir_utf8`, etc.);
 * the library prevents buffer overflow errors by being able to consider the available size of the target buffer.
 
-The library is written in plain C (99). You only need `utfx.h` and `utfx.c`.
+The library is written in plain C. You only need `utfx.h` and `utfx.c`.
 
 The `tests` subdirectory contains the tests, which can be used as an alternate documentation on how to invoke the functions provided by utfx.
 
