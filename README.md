@@ -73,7 +73,7 @@ All functions take the following arguments:
 
 
 
-**Return value: **All functions return the size of the target result in *bytes*.
+**Return value:** All functions return the size of the target result in *bytes*.
 
 ## Functions for working with files and folders in UTF-8
 
