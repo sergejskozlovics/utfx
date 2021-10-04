@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+
 # utfx
 
 The utfx library is able to convert unicode strings between UTF-8, modified UTF-8 (used by Java), UTF-16 and UTF-32 encodings. Additional features:
@@ -64,10 +66,12 @@ All functions take the following arguments:
 * **utfXXlengthInUnits** - 0 to use a terminating '\0' to determine the length of the source string (the source must be null-terminated), or non-zero value to use it as a length (UTF-8 units = bytes, UTF-16 units = double bytes, UTF-32 units = quadrabytes) despite of a possible presence of '\0' in the middle of the source string (the source may be null-terminated or not);
   
 * **target** - a buffer for the result or NULL, if only the size of the result is needed;
-                   
+  
 * **targetSizeInBytes** - the size of the target buffer in *bytes* or an upper bound for the target size if target == NULL; we will return the result, which is <= targetSizeInBytes  (errno may be set to `ERANGE`, if targetSizeInBytes is not sufficient); if (target != NULL) we will write no more than targetSizeInBytes bytes into the target buffer;
-                   
+  
 * **writeTerminatingNull** - a boolean (0 or 1) specifying whether we need to write a terminating '\0' *unit* (1, 2, or 4 bytes depending on the target encoding) into the target buffer (only when target != NULL and targetSizeInBytes is not less than a space needed for one target unit).
+
+
 
 **Return value: **All functions return the size of the target result in *bytes*.
 
